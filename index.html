@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f6fb">
+    <title>Jigsaw Puzzle - รถคันโปรด</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="game">
+      <header class="game-header">
+        <div>
+          <p class="eyebrow">JIGSAW PUZZLE</p>
+          <h1>ต่อภาพรถให้ครบ!</h1>
+          <p class="instructions">ลากชิ้นส่วนทั้ง 20 ชิ้นจากถาดด้านล่างไปวางให้ตรงตำแหน่ง</p>
+        </div>
+        <button class="reset-button" id="reset-button" type="button">เริ่มเกมใหม่</button>
+      </header>
+
+      <section class="game-panel" aria-label="เกมจิ๊กซอว์">
+        <div class="game-info">
+          <span id="game-status" aria-live="polite">กำลังเตรียมเกม...</span>
+          <div class="stats">
+            <span>เวลา <strong id="timer">00:00</strong></span>
+            <span>วางแล้ว <strong id="progress">0 / 20</strong></span>
+            <span>เหลือในถาด <strong id="remaining">20</strong></span>
+          </div>
+        </div>
+        <canvas id="puzzle" aria-label="กระดานเกมจิ๊กซอว์ ลากชิ้นส่วนเพื่อวางลงบนภาพ"></canvas>
+      </section>
+      <p class="help-text">💡 วางชิ้นส่วนใกล้ตำแหน่งที่ถูกต้อง แล้วชิ้นส่วนนั้นจะเข้าที่ให้อัตโนมัติ</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
